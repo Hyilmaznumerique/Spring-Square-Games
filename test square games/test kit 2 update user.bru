@@ -1,0 +1,18 @@
+meta {
+  name: test kit 2 update user
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/users/123
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id" : "123",
+    "email" : "234"
+  }
+}
